@@ -37,7 +37,7 @@ $result = $conn->query($sql);
                       <div>
                       <img src='" . $row["url_cover"] . "' alt='_blank'/>
                       <a href='#'>Eliminar</a>
-                      <a href='#'>Editar</a>
+                      <a href='./update_anime_form.php?id=".$row['id']."'>Editar</a>
 
                      </div> 
                       <div class='card-detalles'>
