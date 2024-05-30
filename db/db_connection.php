@@ -1,10 +1,9 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "4521353349";
-$dbname = "waifutv";
+$username = "waifutv_user";
+$password = "password123";
+$dbname = "waifutv";// Crear conexión
 
-// Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verificar conexión

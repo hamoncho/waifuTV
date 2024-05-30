@@ -14,7 +14,6 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-
 --
 -- Table structure for table `animes`
 --
@@ -142,3 +141,9 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2024-05-29 18:32:15
+
+CREATE USER 'waifutv_user'@'localhost' IDENTIFIED BY 'password123';
+GRANT ALL PRIVILEGES ON waifutv.* TO 'waifutv_user'@'localhost';
+
+FLUSH PRIVILEGES;
+
