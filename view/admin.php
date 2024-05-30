@@ -1,4 +1,12 @@
 <?php
+
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header("Location: ./login.php");
+    exit();
+}
+
 include '../db/db_connection.php';
 
 $sql = "SELECT id, titulo, descripcion, fecha_estreno, genero, url_cover, autor, estudio FROM animes";
@@ -24,6 +32,7 @@ $result = $conn->query($sql);
       <ul class="sidebar-menu">
         <li><a href="#ver-animes">Ver Animes</a></li>
         <li><a href="#crear-anime">Crear Anime</a></li>
+        <li><a href="../logout.php">Cerrar sesion</a></li>
       </ul>
     </aside>
     <main class="content">

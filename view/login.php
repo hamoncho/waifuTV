@@ -9,7 +9,7 @@
 <body>
     <div class="login-container">
         <h2>Login</h2>
-        <form action="#" method="post">
+        <form action="../db/login.php" method="post">
             <div class="input-group">
                 <label for="username">Usuario:</label>
                 <input type="text" id="username" name="username" required>
