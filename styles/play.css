@@ -1,0 +1,125 @@
+
+/* Estilos generales y de la página principal */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+  text-decoration: none;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos específicos para la página de reproducción de películas */
+
+.movie-player {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-container {
+  width: 100%;
+    margin-bottom: 20px;
+}
+
+.player-container iframe {
+  height: 70vh;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-details {
+  width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-details h2 {
+    margin-top: 0;
+}
+
+.movie-meta {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.movie-meta span {
+    display: block;
+    margin-top: 5px;
+}
+
+/* Estilos para la lista de episodios siguientes */
+
+.next-episodes h2 {
+    margin-bottom: 20px;
+}
+
+.next-episodes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.next-episodes ul li {
+    margin-bottom: 10px;
+}
+
+.next-episodes ul li a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.next-episodes ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    /*position: absolute;*/
+    bottom: 0;
+    width: 100%;
+}
+main{
+   display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+
+}
