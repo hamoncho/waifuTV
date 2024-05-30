@@ -28,10 +28,9 @@ $result_eps = $conn->query($sql_eps);
                 <h2>Dashboard</h2>
             </div>
             <ul class="sidebar-menu">
-                <li><a href="#crear-anime">Crear Anime</a></li>
-                <li><a href="#ver-animes">Ver Animes</a></li>
-                <li><a href="#editar-anime">Editar Anime</a></li>
-                <li><a href="#eliminar-anime">Eliminar Anime</a></li>
+                <li><a href="./admin.php#crear-anime">Crear Anime</a></li>
+                <li><a href="./admin.php#ver-animes">Ver Animes</a></li>
+                <li><a href="../logout.php">Cerrar Sesion</a></li>
             </ul>
         </aside>
         <main class="content">
