@@ -135,3 +135,31 @@ img{
 .card a:hover {
     text-decoration: underline;
 }
+
+.btn {
+    background-color: #007BFF;
+    color: #fff !important;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-red {
+    background-color: #E74C3C;
+    color: #fff !important;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.btn-red:hover {
+    background-color: #F1948A;
+}
+
+
