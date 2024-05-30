@@ -36,7 +36,7 @@ $result = $conn->query($sql);
               echo  "<div class='card'>
                       <div>
                       <img src='" . $row["url_cover"] . "' alt='_blank'/>
-                      <a class='btn' href='./create_episodios.php?id=".$row['id']."'>Agregar Episodios</a>
+                      <a class='btn' href='./create_episodio_form.php?id=".$row['id']."'>Agregar Eps</a>
                       <a class='btn' href='./update_anime_form.php?id=".$row['id']."'>Editar</a>
                       <a class='btn-red' href='./delete_anime_form.php?id=".$row['id']."'>Eliminar</a>
 

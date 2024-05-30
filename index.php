@@ -37,7 +37,7 @@ $result = $conn->query($sql);
       <div class="hero-text">
         <h1>Bienvenido a WaifuTV</h1>
         <p>Explora y disfruta de las mejores series Animes</p>
-        <a href="view/play.php" class="btn">Ver ahora</a>
+        <a href="./view/play.php?id_eps=2&id_anime=4" class="btn">Ver ahora</a>
       </div>
     </section>
     <section class="movies">
@@ -47,10 +47,12 @@ $result = $conn->query($sql);
         if ($result->num_rows > 0) {
           while ($row = $result->fetch_assoc()) {
 
-            echo '<div class="movie-item">
+            echo '<a href="./view/play.php?id_anime='.$row["id"].'">
+                  <div class="movie-item">
                     <img src="' . $row["url_cover"] . '" alt="tsukumichi">
                     <h3>' . $row["titulo"] . '</h3>
-                  </div>';
+                  </div>
+                  </a>';
           }
         } else {
           echo "<tr><td colspan='8'>No hay animes disponibles</td></tr>";
